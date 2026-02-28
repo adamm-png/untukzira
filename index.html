@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Untuk Zira</title>
+
+<style>
+body {
+    margin: 0;
+    background: #6b0f1a; /* maroon */
+    color: #f5e6d3; /* cream */
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 30px;
+}
+
+#text {
+    max-width: 650px;
+    line-height: 1.9;
+    font-size: 19px;
+}
+</style>
+</head>
+<body>
+
+<div id="text"></div>
+
+<script>
+const message = `
+Haii ziraaa...
+
+selamat ulang tahun yaa!
+
+doa terbaik untukmu, 
+maaf tidak bisa merayakan secara langsung di hadapanmu,
+tapi segenap hati mengucapkan selamat bertambah usia. 
+semoga hal baik selalu beriringan denganmu, semoga senantiasa semesta berpihak kepadamu,
+semoga jalanmu mencapai masa depan yang cerah dipermudahkan.
+terus melangkah dan bahagia.
+aku selalu bangga atas semua proses yang sudah zira lalui.
+selamat berkelana
+
+I will always support U
+
+`;
+
+let i = 0;
+function typing() {
+    if (i < message.length) {
+        document.getElementById("text").innerHTML += message.charAt(i);
+        i++;
+        setTimeout(typing, 35);
+    }
+}
+typing();
+</script>
+
+</body>
+</html>
